@@ -1,8 +1,6 @@
 ---
-title: Home Page
-layout: default
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
 ---
-
-# Ryan Saul
-
-This is Ryan Saul's homepage
