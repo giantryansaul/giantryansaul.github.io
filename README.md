@@ -2,6 +2,12 @@
 
 Personal site for Ryan Saul
 
+# To-Do list
+
+- [ ] Create a simple blog site
+- [ ] Apply new layout and style to the site
+- [ ] Register new domain and connect with the site
+
 # Development
 
 ## Build locally via Docker
