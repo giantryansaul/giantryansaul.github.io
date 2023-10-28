@@ -2,22 +2,24 @@
 
 Personal site for Ryan Saul
 
-# To-Do list
-
-- [ ] Create a simple blog site
-- [ ] Apply new layout and style to the site
-- [ ] Register new domain and connect with the site
-
 # Development
 
-## Build locally via Docker
+## Information
+
+- [Node.js](https://nodejs.org/en/) is required for self-hosting and development with 11ty.
+- [Eleventy](https://www.11ty.dev/) is the static site generator used to build the site.
+
+## Setup
 
 ```bash
-docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll jekyll build
+npm install
 ```
 
-## Serve locally via Docker
+## Running
 
 ```bash
-docker run --rm --name giantryansaul --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll jekyll serve --watch --drafts
+npm start
 ```
+
+- The site will be available at http://localhost:8080
+- The generated site will be available on the `_site` directory.

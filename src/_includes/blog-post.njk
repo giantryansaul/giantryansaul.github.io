@@ -1,0 +1,24 @@
+---
+title: Blog
+layout: 'base.njk'
+---
+  <div class="page-wrap"><img src="/assets/images/Noise--Texture-1-1.png" loading="lazy" sizes="100vw" srcset="/assets/images/Noise--Texture-1-1-p-500.png 500w, /assets/images/Noise--Texture-1-1.png 998w" alt="" class="texture">
+    <section id="section-hero" class="section">
+      <div class="w-layout-blockcontainer container blog w-container">
+        <div class="blog-heading-wrap">
+          <h1 data-w-id="eb8ed9e4-d820-41d0-8bcf-ea02821c902f" class="h1">{{ title }}</h1>
+          <div class="blog-details-wrap">
+            <p class="locatoin-text">{{ page.date | postDate }}</p>
+            <div class="blog-tags-wrap">
+                {% for tag in tags %}
+                    {% if ['posts', 'post'].indexOf(tag) == -1 %}
+                        <div class="blog-tag">{{ tag }}</div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+          </div>
+        </div><img src="/assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1.png" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 90vw, (max-width: 991px) 728px, 940px" srcset="/assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1-p-500.png 500w, /assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1-p-800.png 800w, /assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1-p-1080.png 1080w, /assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1.png 1232w" alt="" class="blog-image">
+        <p class="paragraph blog">{{ content | safe }}</p>
+      </div>
+    </section>
+  </div>

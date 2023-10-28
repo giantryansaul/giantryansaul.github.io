@@ -1,0 +1,27 @@
+---
+title: Blog
+layout: 'base.njk'
+---
+  <div class="page-wrap"><img src="/assets/images/Noise--Texture-1-1.png" loading="lazy" sizes="100vw" srcset="/assets/images/Noise--Texture-1-1-p-500.png 500w, /assets/images/Noise--Texture-1-1.png 998w" alt="" class="texture">
+    <section id="section-hero" class="section">
+      <div class="w-layout-blockcontainer container blog-nav w-container">
+        <div class="blogs-wrap">
+          <div id="w-node-blog-nav" class="w-layout-layout blog-nav-stack wf-layout-layout">
+          {%- for post in collections.post -%}
+            <div id="w-node-blog-nav" class="w-layout-cell">
+              <a href="{{ post.url }}" class="home-individual-blog-link w-inline-block">
+                <div class="blog-nav-cell"><img src="/assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 767px) 240px, 600px" srcset="/assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1-p-500.png 500w, /assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1-p-800.png 800w, /assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1-p-1080.png 1080w, /assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1.png 1232w" alt="" class="blog-cell-image">
+                  <div class="blog-cell-text-wrap">
+                    <h2 class="blog-cell-title">{{ post.data.title }}</h2>
+                    <p class="blog-cell-date">{{ post.page.date | postDate }}</p>
+                    <p class="blog-cell-description">{{ post.data.description }}</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          {%- endfor -%} 
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>

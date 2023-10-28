@@ -1,0 +1,159 @@
+---
+title: Home
+layout: 'base.njk'
+---
+  <div class="page-wrap"><img src="/assets/images/Noise--Texture-1-1.png" loading="lazy" sizes="100vw" srcset="/assets/images/Noise--Texture-1-1-p-500.png 500w, /assets/images/Noise--Texture-1-1.png 998w" alt="" class="texture">
+    <section id="section-hero" class="section hero">
+      <div class="w-layout-blockcontainer container hero w-container"><img class="hero-image" src="/assets/images/Ellipse-3.png" alt="Image of me looking dashing in front of some cherry blossoms." style="opacity:0" sizes="(max-width: 479px) 200px, (max-width: 767px) 240px, (max-width: 991px) 320px, 400px" data-w-id="6a9a6c65-0332-5704-0d0f-9df302ad507d" loading="lazy" srcset="/assets/images/Ellipse-3-p-500.png 500w, /assets/images/Ellipse-3-p-800.png 800w, /assets/images/Ellipse-3-p-1080.png 1080w, /assets/images/Ellipse-3-p-1600.png 1600w, /assets/images/Ellipse-3-p-2000.png 2000w, /assets/images/Ellipse-3-p-2600.png 2600w, /assets/images/Ellipse-3.png 2955w">
+        <div class="hero-text-wrap">
+          <h1 data-w-id="1d48d29e-8c88-88eb-8408-585168e7fcbd" style="opacity:0" class="h1">Managing Software Development<br>&amp; Consulting Businesses</h1>
+          <div data-w-id="a7c76774-8d08-3fe7-46c2-7fd62a12bb5a" style="opacity:0" class="location-wrap"><img src="/assets/images/Vector-6.svg" loading="lazy" alt="Location pin icon">
+            <p class="locatoin-text">Portland, OR</p>
+          </div>
+          <a href="#section-contact" data-w-id="db57b890-b257-121c-def6-8c12fe90ae05" style="opacity:0" class="button primary w-button">Say hello!</a>
+        </div>
+      </div>
+    </section>
+    <section id="section-about" class="section">
+      <div class="w-layout-blockcontainer container w-container">
+        <div class="about-content-wrap">
+          <div class="about-me-column-wrap">
+            <div class="about-profile-text-wrap">
+              <h2 class="h2">About Me</h2>
+              <p class="paragraph">An <span class="emphasize-text">Engineering Manager</span> with <span class="emphasize-text">12 years</span> of experience in <span class="emphasize-text">software development</span> and <span class="emphasize-text">6 years</span> of experience in <span class="emphasize-text">people management</span>. I consider myself a generalist and I&#x27;m always looking for challenging opportunities to improve! I have worked in many parts of software development, including <span class="emphasize-text">frontend</span>, <span class="emphasize-text">backend</span>, <span class="emphasize-text">QA and DevOps</span>. I focus on <span class="emphasize-text">enabling my team</span> and unblocking them quickly. I also love promoting a <span class="emphasize-text">collaborative and affirming workplace</span>.</p>
+            </div>
+            <div class="wrap-free-time">
+              <h3 class="h3">In my free-time I enjoy</h3>
+              <div class="w-layout-layout free-time-stack wf-layout-layout">
+                <div class="w-layout-cell cell-free-time"><img src="/assets/images/Frame-1891.svg" loading="lazy" alt="Meeple icon (to represent board games)" class="icon-free-time">
+                  <p class="paragraph">Board Games</p>
+                </div>
+                <div class="w-layout-cell cell-free-time"><img src="/assets/images/Frame-1892.svg" loading="lazy" alt="Improv Icon. A smiling theatre mask." class="icon-free-time">
+                  <p class="paragraph">Improv</p>
+                </div>
+                <div class="w-layout-cell cell-free-time"><img src="/assets/images/Frame-1893.svg" loading="lazy" alt="D&amp;D Icon. A D20 Dice." class="icon-free-time">
+                  <p class="paragraph">D&amp;D</p>
+                </div>
+                <div class="w-layout-cell cell-free-time"><img src="/assets/images/Frame-1894.svg" loading="lazy" alt="A Bicycle Icon" class="icon-free-time">
+                  <p class="paragraph">Bicycling</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-w-id="54a566c5-ce3a-72bf-f0aa-8e9bdcdd3788" style="opacity:0" class="about-me-column-wrap right">
+            <h3 class="h3">Blog Posts</h3>
+            <div class="w-layout-layout home-blogs-stack wf-layout-layout">
+              {%- for post in collections.post -%}
+                <div class="w-layout-cell">
+                  <a href="{{ post.url }}" class="home-individual-blog-link w-inline-block"><img src="/assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 240px, (max-width: 991px) 320px, 180px" srcset="/assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1-p-500.png 500w, /assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1-p-800.png 800w, /assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1-p-1080.png 1080w, /assets/images/phraim_devops_blog_image_ba2c34c1-0555-4490-82a1-78abedf5f0df-1.png 1232w" alt="" class="home-blog-image">
+                    <div class="home-indidual-text-wrap">
+                      <p class="paragraph bold centered">{{ post.data.title }}<br></p>
+                      <p class="testimonial-text-two no-margin centered">{{ post.data.description }}<br></p>
+                    </div>
+                  </a>
+                </div>
+              {%- endfor -%} 
+              <div class="w-layout-cell">
+                <a href="/blog" data-w-id="cb25ecc2-c472-ea0f-fd43-367241e0ba50" style="opacity:0" class="button primary fill w-button">view all posts</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-skills" class="section">
+      <div class="w-layout-blockcontainer container w-container">
+        <h2 class="h2">Skills</h2>
+        <div id="w-node-skills" class="w-layout-layout skills-stack wf-layout-layout">
+          <div class="w-layout-cell cell-skills"><img src="/assets/images/icon-person-management.svg" loading="lazy" alt="Icon for Software Engineering Management" class="icon-skill">
+            <p class="paragraph bold centered">Software Engineering Management<br></p>
+            <p class="paragraph light centered">Planning and Estimation, Hiring, Mentorship, Coaching, Career Development<br></p>
+          </div>
+          <div class="w-layout-cell cell-skills"><img src="/assets/images/icon-lifecycle.svg" loading="lazy" alt="Icon for Software Development Lifecycle" class="icon-skill">
+            <p class="paragraph bold centered">Software Development Lifecycle<br></p>
+            <p class="paragraph light centered">Agile, JIRA, CI/CD, Datadog, GitHub<br></p>
+          </div>
+          <div class="w-layout-cell cell-skills"><img src="/assets/images/icon-frontend.svg" loading="lazy" alt="Icon for Frontend Development" class="icon-skill">
+            <p class="paragraph bold centered">Frontend Development<br></p>
+            <p class="paragraph light centered">React, Typescript<br></p>
+          </div>
+          <div class="w-layout-cell cell-skills"><img src="/assets/images/icon-backend-1.svg" loading="lazy" alt="Icon for Backend Development" class="icon-skill">
+            <p class="paragraph bold centered">Backend Development<br></p>
+            <p class="paragraph light centered">Django, FastAPI, Postgres<br></p>
+          </div>
+          <div class="w-layout-cell cell-skills"><img src="/assets/images/icon-devops.svg" loading="lazy" alt="Icon for DevOps" class="icon-skill">
+            <p class="paragraph bold centered">DevOps<br></p>
+            <p class="paragraph light centered">Python, Bash, Terraform, Docker, Jenkins, GitHub Actions, AWS<br></p>
+          </div>
+          <div class="w-layout-cell cell-skills"><img src="/assets/images/icon-security.svg" loading="lazy" alt="Security Icon" class="icon-skill">
+            <p class="paragraph bold centered">Security<br></p>
+            <p class="paragraph light centered">SOC 2 Compliance, OAuth 2.0, SNYK, Dependabot<br></p>
+          </div>
+          <div class="w-layout-cell cell-skills"><img src="/assets/images/icon-auto-testing.svg" loading="lazy" alt="Icon for Test Automation" class="icon-skill">
+            <p class="paragraph bold centered">Test Automation<br></p>
+            <p class="paragraph light centered">Selenium, Cypress, Appium, LambdaTest, SauceLabs, BrowserStack, Webdriver.io<br></p>
+          </div>
+          <div class="w-layout-cell cell extra-skill">
+            <h3 class="h3 smaller">I&#x27;ve used these skills to impact many businesses and would love the opportunity to consult for yours!</h3>
+            <a href="/consulting" class="button primary fill w-button">consulting services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-testimonials" class="section">
+      <div class="w-layout-blockcontainer container w-container">
+        <h2 class="h2">Testimonials</h2>
+        <div class="w-layout-layout stack-testimonials wf-layout-layout">
+          <div class="w-layout-cell cell-testimonial">
+            <div class="wrap-testimonial-upper"><img src="/assets/images/quote-icon.svg" loading="lazy" alt="Quote icon" class="icon-quote">
+              <p class="paragraph testimonial">Ryan and I worked together at Jama previously, so I was very happy when he was able to contract with me at Honeycomb! I asked Ryan to help move over some call recordings from one tool to another. The API wasn't exactly ... straightforward, and Ryan not only completed the project, but also went above and beyond by working with the third party vendor to make sure everything was moved over. I'm very grateful for Ryan's work, and would not hesitate to contract with him again (or work with him professionally in the future). Thanks, Ryan!</p>
+            </div><img src="https://media.licdn.com/dms/image/C4D03AQH3hPzWnJfXgw/profile-displayphoto-shrink_100_100/0/1517344570991?e=1703721600&v=beta&t=Yd8-r8xT1z36x-IV8CSsyQ87btQhgZdgDvmzON0i_K8" loading="lazy" sizes="(max-width: 479px) 100px, 120px"  alt="" class="testimonial-pfp">
+            <h3 class="h3 name">Jess Stetson</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-experience" class="section">
+      <div class="w-layout-blockcontainer container w-container">
+        <h2 class="h2">Experience</h2>
+        <div class="experience-cell">
+          <h3 class="h3">Software Engineering Manager<br></h3>
+          <p class="paragraph faint">@ Streem (A Frontdoor Company)  <span class="emphasize-text">|</span>  <em>11/2019 - Present</em><br></p>
+        </div>
+        <div class="experience-cell">
+          <h3 class="h3">QA Manager<br></h3>
+          <p class="paragraph faint">@ Mirador (A CUNA Mutual Company)  <span class="emphasize-text">|</span>  <em>2/2019 - 11/2019</em><br></p>
+        </div>
+        <div class="experience-cell">
+          <h3 class="h3">QA Manager<br></h3>
+          <p class="paragraph faint">@ 4-Tell  <span class="emphasize-text">|</span>  <em>10/2017 - 2/2019</em><br></p>
+        </div>
+        <div class="experience-cell">
+          <h3 class="h3">QA Engineer<br></h3>
+          <p class="paragraph faint">@ Jama Software  <span class="emphasize-text">|</span>  <em>2/2011 - 10/2017</em><br></p>
+        </div>
+        <a href="/resume" target="_blank" class="button primary w-button">view complete resume</a>
+      </div>
+    </section>
+    <section id="section-projects" class="section">
+      <div class="w-layout-blockcontainer container w-container">
+        <h2 class="h2">projects</h2>
+        <div class="experience-cell projects">
+          <h3 class="h3">Google Driver (Upload from Kaia) to Gong Data Transfer<br></h3>
+          <h4 class="h4 faint">Contract work for Honeycomb.io<br></h4>
+          <p class="paragraph centered">Created a multithreaded Python script to download, process, and upload video and data from the Kaia CRM tool into Gong.<br></p>
+          <div class="rl_contact1_spacing-block-2"></div>
+          <a href="https://github.com/giantryansaul/google_drive_kaia_gong" target="_blank" class="button primary w-button">view project</a>
+          <div class="rl_contact1_spacing-block-2"></div>
+        </div>
+        <div class="experience-cell projects">
+          <h3 class="h3">Transcriptly: OpenAI Whisper Transcriptions<br></h3>
+          <h4 class="h4 faint centered">Audio transcriptions and summaries created with machine-learning models<br></h4>
+          <p class="paragraph centered">Created a Python script using GPT-4 for transcribing audio tracks in Whisper AI and summarizing the transcription.<br></p>
+          <div class="rl_contact1_spacing-block-2"></div>
+          <a href="https://github.com/giantryansaul/transcriptly" target="_blank" class="button primary w-button">view project</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
