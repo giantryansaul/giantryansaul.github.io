@@ -1,21 +1,21 @@
-# Ryan Saul
+# Ryan Saul Personal Site and Blog
 
-Personal site for Ryan Saul
+This is my personal site for professional contact and blogging.
 
-# Development
+## Development
 
-## Information
+### Information
 
 - [Node.js](https://nodejs.org/en/) is required for self-hosting and development with 11ty.
 - [Eleventy](https://www.11ty.dev/) is the static site generator used to build the site.
 
-## Setup
+### Setup
 
 ```bash
 npm install
 ```
 
-## Running
+### Running
 
 ```bash
 npm start
