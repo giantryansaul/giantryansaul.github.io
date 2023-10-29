@@ -47,8 +47,8 @@ jobs:
         run: npm ci
       - name: Build 11ty site
         run: npm run build
+      - name: Upload to Github Pages
+        uses: actions/upload-pages-artifact@v2
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+        id: deployment
+        uses: actions/deploy-pages@v2
